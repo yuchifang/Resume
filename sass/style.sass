@@ -1,0 +1,357 @@
+$color_brown: #4E4547
+$color_green:  #82C4A8
+html,body
+  padding: 0px
+  margin: 0px
+  width: 1024px
+  position: relative
+  left: 50%
+  top: 50%
+  margin-top: 10px
+  transform: translateX(-50%)
+  border: solid 1px black
+  border-radius: 10px 10px 10px 10px
+
+  
+*
+  //border: solid 1px black
+  vertical-align: top
+  box-sizing: border-box
+  font-family: 微軟正黑體
+  
+.top
+  //border: solid 3px red 
+  letter-spacing: -0.31em
+  background-color: $color_brown
+  position: relative
+  &:after
+    content: ""
+    position: absolute
+    bottom: -10px
+    left: 0px
+    width: 100%
+    height: 5px
+    background-color: $color_brown
+    
+  .topright,.topleft
+    display: inline-block
+    height: 210px
+    letter-spacing: normal
+  
+.topleft
+  width: 30%  
+.topright
+  width: 70% 
+  text-align: center
+  position: relative
+  h1.name
+    color: white
+    margin: 0px
+  h1.job
+    
+    position: absolute
+    color: white
+    bottom: 10px
+    left: 193px
+    border: solid 2px white
+    background-color: $color_brown
+    overflow: hidden
+    z-index: 5
+    padding-right: 20px
+    padding-left: 20px
+   
+  hr
+    position: absolute
+    background-color: white
+    color: white
+    border: none
+    height: 2px
+    width: 603px
+    left: 61px
+    bottom: 45.5px
+    
+    
+    
+.bottom
+  height: 800px
+  letter-spacing: -0.31em
+  //border: solid 1px blue
+.left,.right
+  display: inline-block
+  box-sizing: border-box
+  letter-spacing: normal
+.left
+  width: 30%
+  height: 1010px
+  text-align: center
+  margin-top: -210px
+  margin-left: 20px
+  position: relative
+  background-color: $color_green
+  .img
+    margin: 50px 0px
+  .img > img
+      width: 220px
+      height: 220px
+      border-radius: 50%
+      object-fit: cover
+.leftmiddle1
+  font-size: 18px
+  line-height: 0px
+  margin: 20px
+  color: darken($color_brown,7)
+  border-bottom: solid 2px darken($color_brown,7)
+.leftop
+  letter-spacing: -0.31em
+  .lefttopleft,.lefttopright
+    display: inline-block
+    height: 210px
+    letter-spacing: normal
+   
+      
+.lefttopleft
+  text-align: left
+  width: 35%  
+  p 
+    font-weight: bold 
+    color: darken($color_brown,7)
+    padding-left: 5px
+    margin-left: 20px
+    border-bottom: solid 1px darken($color_brown,7)
+.lefttopright
+  width: 65%
+  text-align: left
+  p
+    border-bottom: solid 1px darken($color_brown,7)
+    padding-left: 5px
+    padding-right: 5px
+    margin-left: 20px
+    margin-right: 20px
+
+.leftmiddle2
+  font-size: 18px
+  line-height: 0px
+  margin: 20px
+  color: darken($color_brown,7)
+  border-bottom: solid 2px darken($color_brown,7)
+.lefmiddle
+  letter-spacing: -0.31em
+  .leftmiddleleft,.leftmiddleright
+    display: inline-block
+    height: 175px
+    letter-spacing: normal
+   
+      
+.leftmiddleleft
+  text-align: left
+  width: 35%  
+  p 
+    font-weight: bold 
+    color: darken($color_brown,7)
+    padding-left: 5px
+    margin-left: 20px
+    border-bottom: solid 1px darken($color_brown,7)
+.leftmiddleright
+  width: 65%
+  text-align: left
+  p
+    border-bottom: solid 1px darken($color_brown,7)
+    padding-left: 5px
+    padding-right: 5px
+    margin-left: 20px
+    margin-right: 20px
+    
+.leftmiddle3
+   
+  font-size: 18px
+  line-height: 0px
+  margin-top: 0px
+  color: darken($color_brown,7)
+  border-bottom: solid 2px darken($color_brown,7)   
+  margin-bottom: 0px 
+.leftbottom 
+  height: 100px
+  text-align: center
+  color: darken($color_brown,7)
+  .table
+    .img
+      display: inline-block
+      width: 70px
+      margin: 10px 0px
+      img       
+        font-size: 40px
+        width: 50px
+        height: 50px
+
+
+.right
+  
+  width: 68%
+  height: 800px
+.righttop,.rightmiddle,.rightbottom
+  margin-left: 20px
+  margin-right: 20px
+  h2
+   
+    color: darken($color_green,35)
+    margin-top: 20px
+    border-bottom: solid 3px $color_green
+  p
+    text-indent: 2em
+    //文章開頭空兩格
+    font-size: 20px
+    letter-spacing: 1px
+    //文字寬度
+.rightmiddle
+  height: 200px
+  letter-spacing: -0.31em
+  .rightmiddleleft,.rightmiddleright
+    display: inline-block
+    letter-spacing: normal
+    
+    
+.rightmiddleright
+  width: 41%
+  margin-left: 5px
+.year, .point, .data
+  display: inline-block
+.year
+  position: relative
+  width: 54px
+  height: 24px
+  line-height: 24px
+  font-size: 14px
+  font-weight: bold
+  text-align: center
+  color: white
+  background-color: $color_brown
+  margin-right: 20px
+  &:after
+    content: ""
+    position: absolute
+    right: -11px
+    //display: inline-block
+    width: 0px
+    top: -0.5px
+    height: 0px
+    border-style: solid
+    border-width: 12px 0px 12px 12px
+    border-color: transparent $color_brown transparent $color_brown
+    // 上右下左
+.data
+  width: 150px
+  height: 50px
+  border-left: solid 3px #E3C9CD
+
+.rightmiddleright p
+  position: absolute
+  top: -23px
+  margin-left: -20px 
+  font-size: 15px
+  line-height: 20px
+  width: 180px
+
+.point
+  position: relative
+  margin-right: 15px
+  margin-left: -6px
+  width: 9px
+  height: 9px
+  line-height: 24px
+  vertical-align: middle
+  border-radius: 100%
+  background-color:  #513842
+  
+.rightmiddleleft
+  width: 58%
+  position: relative
+  
+.circle
+  display: inline-block
+  width: 100px
+  margin: 0px 10px
+  height: 100px
+  border-radius: 100%
+  background-color: $color_brown
+  overflow: hidden
+  position: relative
+.circle_white
+  position: absolute
+  width: 80px
+  height: 80px
+  border-radius: 50%
+  color: $color_brown
+  background-color: white
+  font-size: 14px
+  text-align: center
+  line-height: 80px
+  letter-spacing: 1px
+  left: 10px
+  top: 10px
+.shadow
+  position: absolute
+  width: 80px
+  height: 80px
+  transform-origin: left bottom
+  left: 50px
+  bottom: 50px
+  background-color: #DBDBDB
+  /*   transform:rotate(90deg); */
+.DB
+  transform: rotate(90deg)
+  
+.DB2
+  transform: rotate(180deg)
+.rightbottom
+  //border: solid 1px red
+  .set1
+    width: 93%
+    height: 80px
+    position: relative
+    margin: 30px 0px
+    //border: solid 1px red
+.icon
+  display: inline-block
+  border: solid 2px $color_brown
+  color: $color_brown
+  width: 100px
+  height: 35px
+  text-align: center
+  line-height: 35px
+  font-size: 20px
+  margin-bottom: 5px 
+.block
+  width: 400px   
+  height: 35px
+ 
+  letter-spacing: -0.31em
+.block1,.block2,.block3,.block4
+  display: inline-block
+  width: (100%/4)
+  height: 35px
+  border: solid 1px black
+.block2,.block3,.block4
+  border-left: none
+.block1,.block2,.block3
+  border-right: 1px #4F4F4F dashed 
+.block1
+  border-radius: 10% 0% 0% 10%
+.block4
+  border-radius: 0% 10% 10% 0%
+.level5,.level2,.level3,.level4
+  margin-left: 68px
+.set1 
+  .block1,.block2,.block3,.block4        
+    background-color: $color_brown
+.set2
+  .block1    
+    background-color: $color_brown
+  .block2,.block3,.block4     
+    background-color: lighten($color_brown,50)
+.bottombar
+  border-radius: 0px 0px 10px 10px
+  height: 30px
+  background-color: $color_brown
+        
+//--------------
+
